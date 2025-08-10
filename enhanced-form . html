@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Form Example</h1>
+    <p>This page demonstrates a well-structured layout with lists, tables, media, and a complete HTML5 form.</p>
+</header>
+
+<main>
+    <!-- Media Section -->
+    <section>
+        <h2>Introduction Video</h2>
+        <video width="400" controls>
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- List Section -->
+    <section>
+        <h2>Form Features</h2>
+        <ul>
+            <li>Multiple input types</li>
+            <li>HTML5 validation</li>
+            <li>Accessible structure</li>
+        </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Available Services</h2>
+        <table border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Duration</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>3 months</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Graphic Design</td>
+                    <td>2 months</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="post" autocomplete="on">
+            <!-- Text Fields -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="fullname" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required minlength="8"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Number -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+
+            <!-- Radio -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset><br>
+
+            <!-- Checkbox -->
+            <fieldset>
+                <legend>Skills:</legend>
+                <label><input type="checkbox" name="skills" value="html"> HTML</label>
+                <label><input type="checkbox" name="skills" value="css"> CSS</label>
+                <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+            </fieldset><br>
+
+            <!-- Dropdown -->
+            <label for="service">Choose a Service:</label>
+            <select id="service" name="service" required>
+                <option value="">--Select--</option>
+                <option value="web">Web Development</option>
+                <option value="design">Graphic Design</option>
+            </select><br><br>
+
+            <!-- Readonly Field -->
+            <label for="id">User ID:</label>
+            <input type="text" id="id" name="userid" value="USR-001" readonly><br><br>
+
+            <!-- Textarea -->
+            <label for="message">Additional Comments:</label><br>
+            <textarea id="message" name="comments" rows="4" cols="50" placeholder="Your message here..."></textarea><br><br>
+
+            <!-- File Upload -->
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx"><br><br>
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Example Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
